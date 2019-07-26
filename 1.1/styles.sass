@@ -1,0 +1,50 @@
+$border-radius: 0.75rem
+
+body
+    background-color: #799BCE
+    font-family: Roboto
+
+.content
+    position: fixed
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    background-color: #FFF
+    width: 80%
+    display: flex
+    flex-flow: row nowrap
+    border-radius: $border-radius
+    box-shadow: 0.25rem 0.5rem 2rem #333
+    .device-option
+        text-align: center
+        flex: 1 1 0
+        padding: 2.5rem 2rem
+        transition: all 0.3s
+        border-radius: $border-radius
+        &:hover
+            cursor: pointer
+            background-color: #E5E5E5
+        .icon
+            width: 100px
+            margin-bottom: 3rem
+        .name
+            font-size: 2em
+            letter-spacing: 0.25rem
+        .description
+            font-weight: 500
+            color: #9AA0A6
+            font-size: 1.25em
+        .name, .price 
+            color: #4D67D1
+        .price
+            font-size: 1.5em
+            font-weight: 400
+            margin-bottom: 0
+        .number
+            font-weight: bold
+            font-size: 2.5em
+            &:before
+                position: relative
+                bottom: 0.5em
+                content: '$'
+                font-size: 0.5em
