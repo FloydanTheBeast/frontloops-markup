@@ -78,10 +78,7 @@ body {
 .item-preview {
     width: 35rem;
     position: absolute;
-    /* top: -20px; */
     margin: -6.5rem auto 0;
     left: 50%;
     transform: translate(-50%);
-    /* margin-top: -6.5rem; */
-    /* height:  */
 }
