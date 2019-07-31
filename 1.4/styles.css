@@ -1,0 +1,150 @@
+html {
+    background: linear-gradient(to bottom, #CFDDE8, #8CACC8);
+    height: 100%;
+    font-family: Roboto;
+}
+
+.chat-card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #FFF;
+    width: 25rem;
+}
+
+.menu-bar {
+    position: relative;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #6A96D8;
+    padding: 1rem 1.5rem;
+}
+
+.chat-name {
+    margin: 0 0 0 0.875rem;
+    text-transform: uppercase;
+    color: #FFF;
+    letter-spacing: 0.0625rem;
+    font-size: 1rem;
+}
+
+.chat-name::before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    /* bottom: 0; */
+    left: 1rem;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    width: 0.375rem;
+    height: 0.375rem;
+    background-color: #FFF;
+}
+
+.close-chat-btn {
+    fill: #000;
+    stroke: #000;
+}
+
+.chat-body {
+    padding: 1rem 1.5rem;
+}
+
+.separator {
+    display: flex;
+    flex-flow: row nowrap;
+    padding-top: 1rem;
+}
+
+.separator-title {
+    color: #E0E0E0;
+    text-transform: uppercase;
+    padding: 0 1rem;
+}
+
+.separator-line {
+    border-bottom: 1px solid #E0E0E0;
+    width: 100%;
+    transform: translateY(-50%);
+}
+
+.chat-body {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+}
+
+.message {
+    max-width: 70%;
+    margin-bottom: 1rem;
+    flex-grow: 0;
+}
+
+.message.right-align {
+    align-self: flex-end;
+}
+
+.time-box {
+    font-size: 0.75rem;
+    font-weight: 400;
+    margin-bottom: 0.25rem;
+    color: #B4B4B4;
+}
+
+.message.right-align .time-box {
+    text-align: right;
+}
+
+.message-box {
+    background-color: #E6EDF6;
+    color: #333;
+    padding: 0.5rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.message.right-align .message-box{
+    background-color: #F2F2F2;
+}
+
+.danger > .message-box{
+    background-color: #FFC2C1 !important;
+}
+
+.send-message-form {
+    padding-top: 1rem;
+    width: 100%;
+    border-top: 1px solid #E0E0E0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.send-message-text {
+    border: none;
+    flex-grow: 1;
+    font-weight: 700;
+    color: #333;
+}
+
+.send-message-text:focus {
+    outline: none;
+}
+
+.send-message-btn {
+    text-align: center;
+    color: #6A96D8;
+    font-size: 0.875rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.send-message-btn:hover,
+.close-chat-btn {
+    cursor: pointer;
+}
