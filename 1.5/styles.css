@@ -1,0 +1,100 @@
+html {
+    background: url("./img/background.jpg") no-repeat center center fixed;
+    background-size: cover;
+    font-family: Roboto;
+    color: #AAA
+}
+
+.card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #FFF;
+    border-radius: 0.25rem;
+    width: 22rem;
+    padding: 2rem;
+}
+
+.flight-brief-info {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+.flight-brief-info .to {
+    text-align: right;
+}
+
+.city-logo {
+    display: inline-block;
+    font: 3.5rem Prompt;
+    color: #3B8ACF;
+    margin: 0;
+    line-height: 100%;
+}
+
+.city-name {
+    font-weight: 500;
+}
+
+.separator {
+    width: 2.25rem;
+    height: 0.375rem;
+    background-color: #D3E6F4;
+}
+
+.info-row {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.info-block {
+    display: flex;
+    flex-flow: column nowrap;
+    margin-right: 6rem;
+    margin-bottom: 1.5rem;
+}
+
+.info-block-title {
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+.info-block-value {
+    color: #000;
+    font-weight: 500;
+}
+
+.info-columns {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.info-column {
+    align-self: stretch;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.info-column .info-block {
+    margin: 0;
+}
+
+.qr-code {
+    /* flex: 0 1 auto; */
+    /* flex-basis: 100%; */
+    align-self: baseline;
+    /* height: 100%; */
+}
+
+.qr-code {
+    /* display: inline; */
+    height: 10rem;
+}
