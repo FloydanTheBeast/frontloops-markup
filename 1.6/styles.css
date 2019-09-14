@@ -39,7 +39,7 @@ html {
 }
 
 .main-socials-block > p {
-    margin: 0 0 5rem 0;
+    margin: 0 0 3rem 0;
 }
 
 .social-buttons {
@@ -53,8 +53,8 @@ html {
     flex-flow: row nowrap;
     justify-content: space-between;
     padding-left: 1rem;
-    margin-bottom: 4rem;
-    /* text-align: right; */
+    margin-bottom: 2rem;
+    padding: 1rem 0 1rem 1rem;
 }
 
 .social-buttons img {
@@ -84,6 +84,12 @@ html {
     letter-spacing: 0.75px;
 }
 
+.signup-button:hover,
+.signup-button-text:hover {
+    cursor: pointer;
+}
+
+.signup-button:hover .signup-button-text,
 .signup-button-text:hover {
     color: #000;
 }
