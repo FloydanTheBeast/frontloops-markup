@@ -67,7 +67,7 @@ hr {
 
 .card_content > p:first-child::first-letter {
 	font-size: 24px;
-	font-weight: 500;
+	font-weight: 700;
 }
 
 .card_footer {
@@ -93,7 +93,7 @@ hr {
 }
 
 .card_footer_time .time {
-	font-weight: 500;
+	font-weight: 700;
 }
 
 .card_footer_actions {
