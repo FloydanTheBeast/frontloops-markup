@@ -84,6 +84,12 @@ html {
   letter-spacing: 0.75px;
 }
 
+.signup-button:hover,
+.signup-button-text:hover {
+  cursor: pointer;
+}
+
+.signup-button:hover .signup-button-text,
 .signup-button-text:hover {
   color: #000;
 }

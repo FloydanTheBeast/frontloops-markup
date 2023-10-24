@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Loop 1 - Step 7</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+	<link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+	<div class="card">
+		<div class="card_column">
+			<h2>Be a man:</br><span>Respect woman</span></h2>
+			<hr/>
+			<div class="card_profile">
+				<img src="./img/avatar.jpg" alt="">
+				<p>John Hanson</p>
+			</div>
+		</div>
+		<div class="card_column">
+			<div class="card_content">
+				<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic assumenda, rerum maxime dolores quo
+					necessitatibus explicabo soluta suscipit incidunt, sed odit numquam! Explicabo totam animi tenetur harum
+					earum, laborum non! Unde saepe pariatur dolorem voluptatum maxime sint? Nulla, aliquam? Harum debitis
+					laudantium modi iure numquam repudiandae quis a eius magni.</p>
+				<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam numquam corrupti omnis incidunt fuga,
+					consequuntur quasi veniam eveniet debitis totam aliquam dolorem, voluptates perspiciatis nobis!</p>
+			</div>
+			<footer class="card_footer">
+				<div class="card_footer_time">
+					<p class="date"></p>
+					<p class="divider"> - </p>
+					<p class="time"></p>
+				</div>
+				<div class="card_footer_actions">
+					<div class="action_message">
+						<img src="./img/comment.svg" alt="">
+						<p>23</p>
+					</div>
+					<div class="action_more">
+						<img src="./img/more.svg" alt="">
+					</div>
+				</div>
+			</footer>
+		</div>
+	</div>
+
+	<script>
+		document.querySelector(".date").textContent = new Date().toDateString()
+		const timeElement = document.querySelector(".time")
+
+		setInterval(() => {
+			timeElement.textContent = new Date(Date.now()).toLocaleTimeString()
+		}, 500)
+	</script>
+</body>
+
+</html>
