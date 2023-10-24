@@ -1,0 +1,100 @@
+body
+  font-family: 'Roboto', Arial, Helvetica, sans-serif
+  background-color: #f2ce97
+
+p
+  font-weight: 300
+  line-height: 1.5
+  margin: 0
+
+.blog-post
+  position: absolute
+  top: 50%
+  left: 50%
+  width: 800px
+  transform: translate(-50%, -50%)
+  display: flex
+  justify-content: center
+
+  & > div
+    padding: 48px 32px 24px
+
+  &__left-block
+    width: 40%
+    background-color: #484956
+    color: #fff
+    position: relative
+
+    & > h2
+      margin: 0
+
+    & > h3
+      margin-top: 0
+      font-size: 24px
+      font-weight: 300
+
+    & > h3::after
+      content: ''
+      margin-top: 12px
+      display: block
+      width: 100px
+      height: 4px
+      background-color: #e37b62
+
+    & > footer
+      position: absolute
+      bottom: 32px
+      display: flex
+      align-items: center
+      column-gap: 12px
+
+      & > img
+        width: 64px
+        border-radius: 50%
+        box-shadow: 1px 5px 10px #222
+
+  &__right-block
+    position: relative
+    width: 60%
+    background-color: #fff
+    height: 100%
+    padding-bottom: calc(24px * 3 + 12px) !important
+    overflow: hidden
+
+    & > p
+      margin-bottom: 16px
+
+    & > p:first-child::first-letter
+      font-weight: 600
+      font-size: 20px
+
+    & > footer
+      position: absolute
+      bottom: 0
+      left: 0
+      right: 0
+      display: flex
+      justify-content: space-between
+      align-items: center
+      box-shadow: 0 -5px 10px #ddd
+      padding: 24px 32px
+      font-size: 12px
+
+  &__buttons
+    display: flex
+    justify-content: space-between
+    flex-flow: row nowrap
+    column-gap: 16px
+
+    & img
+      width: 16px
+      cursor: pointer
+
+    &__comment
+      display: flex
+      flex-flow: row nowrap
+      align-items: center
+      column-gap: 8px
+
+      & > p
+        color: #B6B6B8
