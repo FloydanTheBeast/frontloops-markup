@@ -1,6 +1,7 @@
 body {
-  background-color: #799BCE;
-  font-family: Roboto; }
+  background-color: #799bce;
+  font-family: Roboto;
+}
 
 .content {
   position: fixed;
@@ -9,7 +10,7 @@ body {
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  background-color: #FFF;
+  background-color: #fff;
   width: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -20,41 +21,52 @@ body {
   flex-flow: row nowrap;
   border-radius: 0.75rem;
   -webkit-box-shadow: 0.25rem 0.5rem 2rem #333;
-  box-shadow: 0.25rem 0.5rem 2rem #333; }
-  .content .device-option {
-    text-align: center;
-    -webkit-box-flex: 1;
-    -ms-flex: 1 1 0px;
-    flex: 1 1 0;
-    padding: 2.5rem 2rem;
-    -webkit-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    transition: all 0.3s;
-    border-radius: 0.75rem; }
-    .content .device-option:hover {
-      cursor: pointer;
-      background-color: #E5E5E5; }
-    .content .device-option .icon {
-      width: 100px;
-      margin-bottom: 3rem; }
-    .content .device-option .name {
-      font-size: 2em;
-      letter-spacing: 0.25rem; }
-    .content .device-option .description {
-      font-weight: 500;
-      color: #9AA0A6;
-      font-size: 1.25em; }
-    .content .device-option .name, .content .device-option .price {
-      color: #4D67D1; }
-    .content .device-option .price {
-      font-size: 1.5em;
-      font-weight: 400;
-      margin-bottom: 0; }
-    .content .device-option .number {
-      font-weight: bold;
-      font-size: 2.5em; }
-      .content .device-option .number:before {
-        position: relative;
-        bottom: 0.5em;
-        content: '$';
-        font-size: 0.5em; }
+  box-shadow: 0.25rem 0.5rem 2rem #333;
+}
+.content .device-option {
+  text-align: center;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 0px;
+  flex: 1 1 0;
+  padding: 2.5rem 2rem;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  border-radius: 0.75rem;
+}
+.content .device-option:hover {
+  cursor: pointer;
+  background-color: #e5e5e5;
+}
+.content .device-option .icon {
+  width: 100px;
+  margin-bottom: 3rem;
+}
+.content .device-option .name {
+  font-size: 2em;
+  letter-spacing: 0.25rem;
+}
+.content .device-option .description {
+  font-weight: 500;
+  color: #9aa0a6;
+  font-size: 1.25em;
+}
+.content .device-option .name,
+.content .device-option .price {
+  color: #4d67d1;
+}
+.content .device-option .price {
+  font-size: 1.5em;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+.content .device-option .number {
+  font-weight: bold;
+  font-size: 2.5em;
+}
+.content .device-option .number:before {
+  position: relative;
+  bottom: 0.5em;
+  content: '$';
+  font-size: 0.5em;
+}
