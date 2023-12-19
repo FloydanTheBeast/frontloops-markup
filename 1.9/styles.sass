@@ -1,0 +1,150 @@
+
+@mixin operation-indicator()
+  position: absolute
+  left: 0
+  top: 50%
+  transform: translateY(-50%)
+  display: inline-block
+  width: 20px
+  height: 20px
+  border: 1px solid var(--border-color)
+  border-radius: 50%
+  text-align: center
+  font-weight: 300
+
+html
+  background-color: #F6CD76
+  font-family: 'Roboto'
+  --font-color: #373737
+  --font-color-dimed: #727272
+  --font-color-light: #C4C4C4
+  --border-color: #DEDEDE
+
+h2, h3
+  margin: 0
+  color: var(--font-color)
+
+h2
+  font-size: 20px
+
+p
+  margin: 0
+  font-size: 12px
+
+button
+  background-color: unset
+  border: none
+
+div.card
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+  width: 800px
+  max-height: 400px
+  display: flex
+  flex-flow: row nowrap
+
+.wallets-list
+  display: flex
+  flex-flow: column nowrap
+  row-gap: 32px
+  width: 35%
+  // height: 400px
+  max-height: 100%
+  background-color: #F2F2F2
+  padding: 32px
+  overflow-y: scroll
+
+  &__heading
+    display: flex
+    flex-flow: row nowrap
+    justify-content: space-between
+    align-items: center
+
+    & h2
+      font-weight: 400
+    & button
+      font-family: inherit
+      font-weight: 300
+      font-size: 20px
+      padding: 0
+
+  &__wallet
+    display: flex
+    flex-direction: column
+    row-gap: 8px
+    padding: 8px
+    background-color: #fff
+    border-radius: 4px
+    border: 1px solid #DEDEDE
+
+    &_active
+      border: 2px solid #8793C6
+
+    & p
+      color: var(--font-color-dimed)
+    &__logo
+      width: 50px
+    &__number
+      font-weight: 500
+    &__valid-date
+      font-size: 11px
+
+.wallet-info
+  width: 70%
+  background-color: #fff
+  padding: 32px
+  overflow-y: auto
+
+  &__header
+    display: flex
+    flex-flow: row nowrap
+    justify-content: space-between
+    padding-bottom: 32px
+    margin-bottom: 24px
+    border-bottom: 1px solid #DEDEDE
+
+    & h2:first-child
+      font-weight: 400
+
+    &__balance span
+      font-size: 16px
+      vertical-align: top
+
+  &__operations-list
+    display: flex
+    flex-flow: column nowrap
+    row-gap: 16px
+
+    & .operation
+      position: relative
+      display: flex
+      flex-flow: row nowrap
+      justify-content: space-between
+      align-items: center
+      &__info
+        padding-left: 50px
+        & p
+          margin-top: 4px
+          color: var(--font-color-light)
+
+      &_add
+        & .operation__info__sum
+          color: #8ACE5D
+          & span
+            font-size: 12px
+            vertical-align: top
+        & .operation__info::before
+          content: '+'
+          @include operation-indicator()
+
+      &_subtract
+        & .operation__info__sum
+          color: #8797C6
+          & span
+            font-size: 12px
+            vertical-align: top
+        & .operation__info::before
+          content: '-'
+          @include operation-indicator()
